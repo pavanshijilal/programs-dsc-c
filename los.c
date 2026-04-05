@@ -1,16 +1,19 @@
+/*Pavan S Lal
+ISP*/
 #include<stdio.h>
+#include<string.h>
 int main()
 {
-    char s[100]; 
-    int count=0;
-    printf("\nEnter a string:");
+    char s[100];
+    printf("\nEnter the sentence:");
     scanf(" %[^\n]",s);
-    int i=0;
+    int c=0,i=0;
     while(s[i]!='\0')
     {
-        count+=1;
+        c++;
         i++;
     }
-    printf("\nLength of string is %d",count);
+    printf("\nThe length of string is %d",c);
+    printf("\nThe length of string is %lu",strlen(s));
     return 0;
 }
